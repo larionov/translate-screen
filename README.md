@@ -23,7 +23,7 @@ sudp apt install -y tesseract-ocr-chi-sim tesseract-ocr-eng tesseract-ocr-tha
 # terminal
 sudo apt install -y kitty
 
-# resize utility mogrify
+# resize utility mogrify (optional for low res screens <= 1980p)
 sudo apt install -y imagemagick-6.q16
 
 # translator CLI (add ~/bin to PATH)
