@@ -42,16 +42,7 @@ cd ~/bin && wget -O translate-screen.desktop https://raw.githubusercontent.com/l
 chmod +x ~/bin/translate-screen.sh
 ```
 
-Add the shortcut in KDE
-
-```bash
-
-desktop-file-install --dir=$HOME/.local/share/applications ./translate-screen.desktop
-kwriteconfig5 --file "$HOME/.config/kglobalshortcutsrc" --group "translate-screen.desktop" --key "_k_friendly_name" "larionov/translate-screen" 
-kwriteconfig5 --file "$HOME/.config/kglobalshortcutsrc" --group "translate-screen.desktop" --key "_launch" "Ctrl+Alt+T,none,~/bin/translate-screen.sh"
-kquitapp5 kglobalaccel && sleep 2s && kglobalaccel5 &
-```
-
+And after that add a shortcut in your environment for command `translate-screen.sh`
 
 # Demo
 ![demo](./demo.gif)
