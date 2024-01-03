@@ -22,6 +22,7 @@ maim -s $SCR_IMG.png #| xclip -selection clipboard -t image/png -i
 tesseract --psm 3 --oem 1 -l $OCR_LANG $SCR_IMG.png $SCR_IMG
 
 # translate and display the results
+# -b means brief, mode. Remove it to get more info, like pronounciation
 kitty -o font_size=18 --hold trans -b -show-alternatives no -i $SCR_IMG.txt
 
 exit

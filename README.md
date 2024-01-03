@@ -38,11 +38,10 @@ mkdir ~/bin && cd ~/bin; wget git.io/trans; chmod +x ./trans
 Download executable and put it into PATH
 ```bash
 cd ~/bin && wget -O translate-screen.sh https://raw.githubusercontent.com/larionov/translate-screen/main/translate-screen.sh 
-cd ~/bin && wget -O translate-screen.desktop https://raw.githubusercontent.com/larionov/translate-screen/main/translate-screen.desktop 
 chmod +x ~/bin/translate-screen.sh
 ```
 
 And after that add a shortcut in your environment for command `translate-screen.sh`
 
 # Demo
-![demo](./demo.gif)
+![demo](./demo.mp4)
