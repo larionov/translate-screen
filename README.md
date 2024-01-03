@@ -37,19 +37,21 @@ mkdir ~/bin && cd ~/bin; wget git.io/trans; chmod +x ./trans
 
 Download executable and put it into PATH
 ```bash
-cd ~/bin && wget -o translate-screen.sh https://raw.githubusercontent.com/larionov/translate-screen/main/translate-screen.sh 
-chmod +x ./translate-screen.sh
+cd ~/bin && wget -O translate-screen.sh https://raw.githubusercontent.com/larionov/translate-screen/main/translate-screen.sh 
+cd ~/bin && wget -O translate-screen.desktop https://raw.githubusercontent.com/larionov/translate-screen/main/translate-screen.desktop 
+chmod +x ~/bin/translate-screen.sh
 ```
 
 Add the shortcut in KDE
 
-run `nano ~/.config/.kglobalshortcutsrc` and append the following:
+```bash
 
-```.rc
-[translate-screen.sh.desktop]
-_k_friendly_name=translate-screen.sh
-_launch=Ctrl+Alt+T,none,translate-screen.sh
+desktop-file-install --dir=$HOME/.local/share/applications ./translate-screen.desktop
+kwriteconfig5 --file "$HOME/.config/kglobalshortcutsrc" --group "translate-screen.desktop" --key "_k_friendly_name" "larionov/translate-screen" 
+kwriteconfig5 --file "$HOME/.config/kglobalshortcutsrc" --group "translate-screen.desktop" --key "_launch" "Ctrl+Alt+T,none,~/bin/translate-screen.sh"
+kquitapp5 kglobalaccel && sleep 2s && kglobalaccel5 &
 ```
+
 
 # Demo
 ![demo](./demo.gif)
