@@ -44,4 +44,6 @@ chmod +x ~/bin/translate-screen.sh
 And after that add a shortcut in your environment for command `translate-screen.sh`
 
 # Demo
-![demo](./demo.mp4)
+
+https://github.com/larionov/translate-screen/assets/174250/745b9243-fc83-4056-b0b3-0530e81e0159
+
