@@ -37,7 +37,7 @@ mkdir ~/bin && cd ~/bin; wget git.io/trans; chmod +x ./trans
 
 Download executable and put it into PATH
 ```bash
-cd ~/bin && wget -o translate-screen.sh ... 
+cd ~/bin && wget -o translate-screen.sh https://raw.githubusercontent.com/larionov/translate-screen/main/translate-screen.sh 
 chmod +x ./translate-screen.sh
 ```
 
